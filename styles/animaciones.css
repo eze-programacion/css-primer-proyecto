@@ -1,0 +1,51 @@
+.introduccion{
+    margin-bottom: 100px;
+}
+
+h1{
+    text-align: center;
+}
+
+h4{
+    margin-left: 10px;
+    color: white;
+}
+
+.cajita {
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 20%;
+    /* Rotacion del cuadrado en 45º */
+    transform:rotate(45deg)
+}
+
+@keyframes ejemplo{
+    from{
+        left: 0;
+        background-color: #ffff00;
+    }
+    to{
+        left: 250px;
+        background-color: #99b333;
+    }
+}
+
+.linear{
+    animation: ejemplo 2s linear infinite alternate;
+}
+.ease{
+    animation: ejemplo 2s ease infinite alternate;
+}
+.ease-in{
+    animation: ejemplo 2s ease-in infinite alternate;
+}
+.ease-out{
+    animation: ejemplo 2s ease-out infinite alternate;
+}
+.ease-in-out{
+    animation: ejemplo 2s ease-in-out infinite alternate;
+}

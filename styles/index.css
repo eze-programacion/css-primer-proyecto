@@ -1,0 +1,57 @@
+h3{
+    padding-top: 20px;
+}
+
+h1, h2, h3, p{
+    color: white;
+}
+
+.introduccion h1 {
+    margin-bottom: 100px;
+}
+
+a{
+    color: #fa8d3b;
+}
+
+.container-img {
+    position: relative;
+    margin-bottom: 100px;
+    z-index: 0;
+}
+
+img {
+    max-width: 70%;
+}
+
+.caja-texto {
+    /* Para que se ponga sobre elementos, tiene que estar en absoluto */
+    position: absolute;
+    /*  Colocan el punto de referencia del elemento (su esquina superior izquierda) al 50% de la altura 
+    y el ancho del contenedor, lo que lo centra de manera aproximada. */
+    top: 69%;
+    left: 50%;
+    /*  Ajusta la posición del elemento moviéndolo hacia arriba y hacia la izquierda un 50% de su propio ancho y alto, 
+    lo que efectivamente centra el elemento en el contenedor. */
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+    /* Alto de la caja del scroll */
+    height: 60%;
+    /* ancho maximo que alcanza */
+    width: 70%;
+    color: wheat; /* Color del texto */
+    font-size: 18px; /* Tamaño del texto */
+    /* Fondo del texto */
+    background-color:  rgba(0, 0, 0, 0.507);
+    text-shadow: 3px 3px 3px black;
+    padding: 0 10px;
+    /* Para que los padding se vean de forma correcta */
+    box-sizing: border-box;
+    /* Comienza oculto */
+    opacity: 0; 
+    /* Transición suave */
+    transition: opacity 1.5s; 
+}
+.caja-texto:hover{
+    opacity: 1;
+}

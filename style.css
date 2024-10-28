@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color:#022e53; /* #651f71;*/
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #031c30;
+    overflow: auto;
+    text-decoration: none;
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    border-right: 1px solid rgb(123, 123, 123);
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+}
+
+li a img {
+    width: 20px;
+}
+
+.navbar a:hover:not(.active) {
+    background-color:#fa8d3b;
+}
+
+.active {
+    background-color: #fc6747;
+}
+
+/* Menu e icono de menu cuando se achica la web */
+.responsive {
+    display: none;
+}
+
+@media(max-width:600px) {
+    .responsive {
+        display: block;
+        float: right;
+        padding: 13px;
+    }
+
+    a {
+        display: none;
+    }
+}
+
+.introduccion {
+    text-align: center;
+    margin: 0 15%;
+}
+
+.container{
+    /* Para centrar el contenido de forma horizontal */
+    margin: 0 auto;
+    padding: 100px 0;
+    /* ancho maximo */
+    max-width: 1200px;
+    /* Alto minimo */
+    min-height: 100vh;
+    /*background-color: #022e53;*/
+}
+
+h1{
+    color: white;
+}
+
+.footer{
+    background-color: #031c30;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}

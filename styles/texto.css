@@ -1,0 +1,101 @@
+.introduccion{
+    margin-bottom: 100px;
+}
+
+.grid-container {
+    display: grid;
+    /*background-color: rgb(78, 78, 78);*/
+    padding: 15px;
+    justify-content: space-evenly;
+}
+
+.grid-container>div {
+    margin: 15px;
+    padding: 15px;
+    background-color: white;
+}
+
+.columnas-3 {
+    grid-template-columns: auto auto auto;
+}
+
+.columnas-4 {
+    grid-template-columns: auto auto auto auto;
+}
+
+.columnas-5 {
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.justify {
+    text-align: justify;
+}
+
+h3 {
+    margin: 20px 0 10px 0;
+    color: white;
+}
+
+h5 {
+    text-align: center;
+}
+
+.overline {
+    text-decoration: overline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.overline-underline {
+    text-decoration: overline underline;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowecase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.serif {
+    font-family: serif;
+}
+
+.sans-serif {
+    font-family: sans-serif;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.cursive {
+    font-family: "lucida handwriting" cursive;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
